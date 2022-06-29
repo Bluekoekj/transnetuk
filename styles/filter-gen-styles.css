@@ -1,0 +1,66 @@
+body {
+    background: #f6f6f6;
+    color: #202d4a;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lexend;
+    color: #202d4a;
+}
+p {
+    font-family: Lexend;
+    font-weight: 100;
+    font-size: 20px;
+    color: #202d4a;
+}
+
+.mainpage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.slider {
+    width: 100%;
+}
+div#left-side {
+    background: #f6f6f6;
+    padding: 20px;
+}
+div#right-side {
+    background: white;
+    padding: 20px;
+}
+img#image-output {
+    margin: 10px;
+    max-width: 90%;
+}
+.codefield {
+    background: #dadada;
+    padding: 10px;
+}
+span#chromeCode, span#safariCode, span#firefoxCode {
+    color: #61697c;
+    font-family: Roboto Mono;
+    padding: 0px 10px;
+}
+p#blurText {
+    float: left;
+}
+input#blurValueText {
+    float: right;
+}
+.textAndValue {
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+.textAndValue p {
+    margin: 10px 0px;
+}
+.numberValue {
+    font-family: Lexend;
+    font-size: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 650px) {
+    .mainpage {
+        grid-template-columns: 100%;
+    }
+}

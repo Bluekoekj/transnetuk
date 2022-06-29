@@ -1,0 +1,60 @@
+.url-input, .url-input:disabled {
+    padding: 20px;
+    width: 50%;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #5facea;
+    background: white;
+    font-family: Lato;
+}
+.url-input.custom {
+    border-radius: 0px 5px 5px 0px;
+}
+.top-section {
+    background: #15639a;
+    padding: 20px;
+    color: white;
+}
+p#error-text a {
+    color: white;
+}
+p#error-text {
+    font-weight: bold;
+}
+.shorten-button {
+    height: 58px;
+    border: 0;
+    background: #5facea;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    font-family: Lato;
+    padding: 0px 30px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 134.38px;
+}
+.shorten-button:hover {
+    background: #68bdff;
+}
+.custom-url-pretext {
+    color: #ffffff;
+    border-radius: 5px 0px 0px 5px;
+    padding: 20px;
+    border: 1px solid #5facea;
+    font-family: Lato;
+    width: 134.38px;
+    background-color: #5facea;
+}
+@media (prefers-color-scheme: dark) {
+    .top-section {
+        background: #1b2022;
+    }
+    .url-input, .custom-url-pretext {
+        border-color: #323639;
+    }
+    .shorten-button, .custom-url-pretext {
+        background: #323639;
+    }
+    .shorten-button:hover {
+        background: #505558;
+    }
+}

@@ -1,0 +1,80 @@
+html {
+    min-height: 100%;
+}
+.output {
+    border-radius: 5px;
+    background: #f8f8f8;
+    width: 284px;
+    text-align: right;
+    padding: 0px 20px;
+    overflow-x: scroll;
+}
+
+.previous-operand {
+    font-size: 23px;
+    height: 30px;
+    
+}
+.current-operand {
+    font-size: 32px;
+    height: 50px;
+    font-weight: bold;
+
+}
+body {
+    background: linear-gradient(0deg, rgba(95,172,234,1) 0%, rgba(165,211,248,1) 100%);
+    font-family: 'Quicksand';
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.calculator-grid {
+    background: white;
+    width: 370px;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 2px 20px 4px #0000002e;
+    /* Center vertically and horizontally */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.calculator-grid button {
+    border-radius: 5px;
+    font-size: 32px;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    height: 80px;
+    width: 80px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+    background: #fafafa;
+}
+.span-two {
+    width: 160px !important;
+}
+.calculator-grid button:hover {
+    box-shadow: 0px 2px 7px 0px #202d4a26
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00000018; 
+    border-radius: 50000px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

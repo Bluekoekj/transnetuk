@@ -1,0 +1,116 @@
+html {
+    min-height: 100%;
+}
+body {
+    background-image: url(/images/blurred-bliss.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: #202d4a;
+    font-family: Lato;
+}
+div#main-split {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+div#part2 {
+    background: #00000029;
+    padding: 20px;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Kumbh Sans;
+    font-weight: bold;
+}
+div#part1 img {
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+}
+div#part1 center {
+    padding: calc(100vh / 2 - 635px / 3) 0px;
+    animation: text-fade-in 1s linear;
+}
+div#textanimationpart1 {
+    opacity: 0;
+    animation: text-fade-in 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+}
+div#textanimationpart2 {
+    opacity: 0;
+    animation: text-fade-in 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+}
+div#textanimationpart3 {
+    opacity: 0;
+    animation: text-fade-in 1s linear;
+    animation-fill-mode: forwards;
+    animation-delay: 0.9s;
+}
+h1#logo-text {
+    margin: 0;
+    font-size: 80px;
+    filter: drop-shadow(0 5px 3px rgba(0, 0, 0, 0.3));
+    color: white;
+}
+button#join {
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px white solid;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    font-family: Lato;
+    font-weight: bold;
+    transition: 0.2s;
+}
+button#join:hover {
+    background: white;
+    color: #567717;
+}
+.whatwehave-container {
+    width: 884px;
+    height: 530px;
+    box-shadow: 0px 4px 30px 0px rgba(34,56,101,0.1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    animation: whatwehave-background 20s linear infinite;
+    animation-fill-mode: forwards;
+    background-image: url(https://i.imgur.com/AEM0Dcd.png);
+    background-size: cover;
+    margin: 50px
+}
+.whatwehave-container img {
+    height: 640px;
+}
+@keyframes whatwehave-background {
+    0% {background-image: url(/images/whatwehave1.png);}
+    32% {background-image: url(/images/whatwehave1.png);}
+    33% {background-image: url(/images/whatwehave2.png);}
+    66% {background-image: url(/images/whatwehave2.png);}
+    67% {background-image: url(/images/whatwehave3.png);}
+    100% {background-image: url(/images/whatwehave3.png);}
+}
+@media only screen and (max-width: 1365px) {
+    .whatwehave-container {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+    div#main-split {
+        display: grid;
+        grid-template-columns: 100%!important;
+    }
+    div#part1 center {
+        padding: 20px;
+    }
+}
+@keyframes text-fade-in {
+    0% {transform: translateY(+10px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}

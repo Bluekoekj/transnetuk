@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: PT Sans;
+}
+/* Mobile */
+@media only screen and (min-width: 930px) {
+    .main-div {
+        display: flex !important;
+        height: 100vh !important;
+    }
+}
+.main-div {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0,89,213,1) 0%, rgba(75,167,241,1) 100%);
+    color: white;
+    text-shadow: 0 5px 5px #00000033;
+    font-size: 20px;
+    filter: drop-shadow(0 5px 5px #00000033);
+}
+.main-div-content img {
+    animation: text-fade-in cubic-bezier(0.13, 0.87, 1, 1) 0.3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.main-div-content h1 {
+    font-size: 70px;
+    text-shadow: 0 5px 5px #00000033;
+    margin-bottom: 5px;
+    animation: text-fade-in cubic-bezier(0.13, 0.87, 1, 1) 0.3s;
+    animation-delay: 0.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.main-div-content p {
+    animation: text-fade-in cubic-bezier(0.13, 0.87, 1, 1) 0.3s;
+    animation-delay: 0.6s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.main-div-content button {
+    animation: text-fade-in cubic-bezier(0.13, 0.87, 1, 1) 0.3s;
+    animation-delay: 0.9s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+.main-div-content {
+    width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lato;
+}
+@keyframes text-fade-in {
+    0% {transform: translateY(+10px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+button {
+    padding: 20px;
+    background: transparent;
+    border: 1px solid white;
+    margin: 10px;
+    color: white;
+    font-family: PT Sans;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+button:hover {
+    background: white;
+    color: #0059d5;
+}
+
+/* Nitro styles */
+.nitro-div {
+    background: linear-gradient(90deg, rgba(180,115,245,1) 0%, rgba(226,146,170,1) 100%);
+    padding: 50px;
+}
+.nitro-div img {
+    width: 300px;
+    filter: drop-shadow(0 5px 5px #00000033);
+    margin-bottom: 20px;
+}
+.nitro-div p {
+    margin: 20px;
+    text-shadow: 0 5px 5px #00000033;
+    font-size: 20px;
+    color: white;
+}
+.nitro-div button:hover {
+    color: rgba(180,115,245,1);
+}
+
+/* No big giveaway styles */
+.no-giveaway-div {
+    background: linear-gradient(0deg, #005400 0%, #4ba400 100%);
+    padding: 50px;
+    filter: drop-shadow(0 5px 5px #00000033);
+}
+.no-giveaway-div p {
+    margin: 20px;
+    text-shadow: 0 5px 5px #00000033;
+    font-size: 20px;
+    color: white;
+}
+.no-giveaway-div h1 {
+    margin: 20px;
+    text-shadow: 0 5px 5px #00000033;
+    font-size: 50px;
+    color: white;
+}
+.no-giveaway-div button:hover {
+    color: rgba(180,115,245,1);
+}
+

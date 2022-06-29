@@ -1,0 +1,100 @@
+.top-section {
+    background: #f6f6f6;
+    color: #202d4a;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 40px;
+}
+.top-section a {
+    color: #202d4a;
+    transition: 0.2s;
+}
+.top-section a:hover {
+    color: #395083;
+}
+@font-face {
+    font-family: 'Socicon';
+    src:  url('/fonts/socicon/Socicon.eot');
+    src:  url('/fonts/socicon/Socicon.eot#iefix') format('embedded-opentype'),
+      url('/fonts/socicon/Socicon.woff2') format('woff2'),
+      url('/fonts/socicon/Socicon.ttf') format('truetype'),
+      url('/fonts/socicon/Socicon.woff') format('woff'),
+      url('/fonts/socicon/Socicon.svg#Socicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+.social-icon {
+    font-family: 'Socicon' !important;
+    text-decoration: none;
+    font-size: 46px;
+    margin: 15px;
+}
+.homepage-grid#items4 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.homepage-grid#items3 {
+    display: grid;
+    grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+.homepage-grid#items2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.homepage-grid#items7 {
+    display: grid;
+    grid-template-columns: calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7) calc(100% / 7);
+}
+@media only screen and (max-width: 930px) {
+    .second-part {
+        display: none;
+    }
+    .top-section {
+        grid-template-columns: 100%;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .homepage-grid#items7 {
+        grid-template-columns: calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6) calc(100% / 6);
+    }
+}
+@media only screen and (max-width: 1323px) {
+    .homepage-grid#items7 {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
+@media only screen and (max-width: 1111px) {
+    .homepage-grid#items7 {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+@media only screen and (max-width: 891px) {
+    .homepage-grid#items7 {
+        grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+    }
+}
+@media only screen and (max-width: 680px) {
+    .homepage-grid#items7, .homepage-grid#items3 {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .homepage-grid#items7, .homepage-grid#items3, .homepage-grid#items2 {
+        grid-template-columns: 100%;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .top-section {
+        background: #1b2022;
+        color: #e8e8e8;
+    }
+    .top-section a {
+        color: #e8e8e8;
+    }
+    .top-section a:hover {
+        color: white;
+    }
+    img#hyperlink {
+        filter: invert(1);
+    }
+}
